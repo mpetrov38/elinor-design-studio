@@ -1,0 +1,23 @@
+.navigation-bar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  margin-top: 5px;
+  padding-left: 125px;
+  padding-right: 125px;
+  height: 100%;
+}
+
+.navigation-bar span a{
+  text-decoration: none;
+  color: #000000;
+  vertical-align: middle;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-shadow: 0px 4px 5px #888681;
+}
+
