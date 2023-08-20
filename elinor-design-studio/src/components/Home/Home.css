@@ -12,16 +12,92 @@
 
 .latest-projects {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   height: 100%;
-  width: 100%;
+  max-width: 1440px;
 }
 
-.latest-projects a{
+.latest-projects a {
   color: #888681;
 }
 
-.home-page {
-  padding-left: 125px;
-  padding-right: 125px;
+.latest-projects-container{
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 20px;
+}
+.latest-projects-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+}   
+
+.card img{
+  min-width: 650px;
+  min-height: 706px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  height: 776px;
+}
+
+.card-text {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.card-text a {
+  color: #888681;
+}
+
+
+.card-image {
+  width: 100%;
+  object-fit: cover; 
+  height: 706px;
+}
+
+
+.about-us-services-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F4F1;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.about-us-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-us-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-us-card {
+  display: flex; 
+  width: 100%;   
+  justify-content: space-between; 
+}
+
+.about-us-text {
+  flex: 1; 
+  padding-right: 20px; 
+}
+
+.about-us-card img {
+  flex: 1; 
+  max-width: 50%; 
+  object-fit: cover; 
+  height: 100%;
 }

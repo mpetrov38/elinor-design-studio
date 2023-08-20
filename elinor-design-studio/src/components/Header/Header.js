@@ -5,7 +5,7 @@ import './Header.css';
 
 function Header() {
   return (
-    <header>
+    <header className="center-content">
       <nav >
         <div className='navigation-bar'>
           <span><Link to="/services">Services</Link></span>
