@@ -1,0 +1,55 @@
+/* Main footer container */
+.footer {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+/* Upper and lower sections of the footer */
+.upper-footer-section,
+.lower-footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* Changed to flex-start to align all children at the top */
+  width: 100%;
+  padding: 20px 0;
+}
+
+.upper-footer-section>span,
+.lower-footer-section>span {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  min-height: 150px;
+  /* Setting a consistent min-height. You can adjust this value as needed */
+}
+
+.upper-footer-section img {
+  width: 130px;
+  height: 117px;
+}
+
+.lower-footer-section {
+  border-top: 1px solid #e0e0e0;
+}
+
+/* For the icons and other span elements inside the upper-footer-section */
+.upper-footer-section span span {
+  display: flex;
+  gap: 10px;
+}
+
+.lower-footer-section>span {
+  margin: 0 10px;
+}
+
+.upper-footer-section span h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Removed the padding-top: 0; property since it is redundant in this context */
