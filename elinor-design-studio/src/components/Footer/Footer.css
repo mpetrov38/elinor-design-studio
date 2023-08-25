@@ -1,5 +1,4 @@
-/* Main footer container */
-.footer {
+footer {
   width: 1440px;
   display: flex;
   flex-direction: column;
@@ -7,25 +6,20 @@
   margin: 0 auto;
 }
 
-/* Upper and lower sections of the footer */
 .upper-footer-section,
 .lower-footer-section {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* Changed to flex-start to align all children at the top */
   width: 100%;
-  padding: 20px 0;
+  padding: 27px 0;
 }
 
 .upper-footer-section>span,
 .lower-footer-section>span {
-  flex: 1;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
-  min-height: 150px;
-  /* Setting a consistent min-height. You can adjust this value as needed */
 }
 
 .upper-footer-section img {
@@ -34,22 +28,34 @@
 }
 
 .lower-footer-section {
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #888681;
 }
 
-/* For the icons and other span elements inside the upper-footer-section */
 .upper-footer-section span span {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
 
 .lower-footer-section>span {
-  margin: 0 10px;
+  margin: 0 10px 0px 0px;
+  font-size: 13px;
+  color: #888681;
 }
 
 .upper-footer-section span h3 {
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin-top: -20px;
+  margin-right: 25px;
+  font-family: 'Barlow', sans-serif;
+  color: #000000;
 }
 
-/* Removed the padding-top: 0; property since it is redundant in this context */
+.content-container {
+  gap: 5px;
+  color: #888681;
+}
+
+.footer-element {
+  font-size: 16px;
+  gap:16px;
+  letter-spacing: 0;
+}

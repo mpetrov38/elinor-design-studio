@@ -1,18 +1,15 @@
 body {
   margin: 0;
-  font-family: sans-serif;
+  letter-spacing: .2rem;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Playfair', serif;
+  font-family: 'Playfair Display', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-/* body, html {
-  max-width: 1920px;
-  margin: 0 auto;
-  overflow-x: hidden;
-} */
-

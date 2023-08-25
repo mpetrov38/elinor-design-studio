@@ -5,55 +5,55 @@ import { AiOutlineInstagram } from 'react-icons/ai';
 import { BiLogoLinkedin } from 'react-icons/bi';
 import { TiMail } from 'react-icons/ti';
 import { HiOutlinePhone } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 import './Footer.css';
+import './../Home/Home.css';
 
 function Footer() {
   return (
-    <div className='footer'>
-      <div className='upper-footer-section'>
+    <footer>
+      <section className='upper-footer-section'>
         <span>
           <img src={logo} />
-          <span>
+          <span style={{ paddingTop: "30px", fontSize: "18px", color: "#888681" }}>
             <FaFacebookF />
             <AiOutlineInstagram />
             <BiLogoLinkedin />
           </span>
         </span>
-        <span>
+        <span className='content-container'>
           <h3>PAGES</h3>
-          <span>Services</span>
-          <span>Portfolio</span>
-          <span>About</span>
-          <span>Shop</span>
-          <span>Contact</span>
+          <span className="footer-element">Services</span>
+          <span className="footer-element">Portfolio</span>
+          <span className="footer-element">About</span>
+          <span className="footer-element">Shop</span>
+          <span className="footer-element">Contact</span>
         </span>
-        <span>
+        <span className='content-container'>
           <h3>USEFUL LINKS</h3>
-
-          <span>Useful links</span>
-          <span>Privacy Policy</span>
-          <span>Cookie Policy</span>
-          <span>Press</span>
-          <span>Journal</span>
+          <span className="footer-element">Privacy Policy</span>
+          <span className="footer-element">Cookie Policy</span>
+          <span className="footer-element">Press</span>
+          <span className="footer-element">Journal</span>
         </span>
-        <span>
+        <span className='content-container'>
           <h3>CONTACTS</h3>
-          <span><TiMail />studio@elinorinteriors.com</span>
-          <span><HiOutlinePhone />081122345 / Sofia, Bulgaria</span>
-          <span><HiOutlinePhone />081122345 / New York, USA</span>
+          <span className="footer-element"><TiMail style={{ fontSize: "24px" }} />studio@elinorinteriors.com</span>
+          <span className="footer-element"><HiOutlinePhone style={{ fontSize: "24px" }} />081122345 / Sofia, Bulgaria</span>
+          <span className="footer-element"><HiOutlinePhone style={{ fontSize: "24px" }} />081122345 / New York, USA</span>
         </span>
-        <span>
+        <span className='content-container'>
           <h3>NEWSLETTER</h3>
-          <span>Email address</span>
-          <input type='text' placeholder='ivan.ivanov@gmail.com'></input>
-          <span>Subscribe</span>
+          <span className="footer-element">Email address</span>
+          <input type='text' placeholder='ivan.ivanov@gmail.com' style={{ padding: "14px 188px 14px 0px", textAlign: "center" }}></input>
+          <span style={{ justifyContent: "flex-end" }}><Link to="/subscribe" >SUBSCRIBE</Link></span>
         </span>
-      </div>
-      <div className='lower-footer-section'>
-        <span>Copyright 2023 Elinor Design Studio</span>
-        <span>Made with love and code by Fundamental studio</span>
-      </div>
-    </div>
+      </section>
+      <section className='lower-footer-section'>
+        <span className="footer-element">Copyright 2023 Elinor Design Studio</span>
+        <span className="footer-element">Made with love and code by Fundamental studio</span>
+      </section>
+    </footer>
   )
 }
 
