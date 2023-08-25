@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo_dark_text_4.png';
 import './Header.css';
 import { IoIosArrowDown } from 'react-icons/io';
+import { FaInstagram } from 'react-icons/fa';
+import { FaFacebookF } from 'react-icons/fa';
+
 
 function Header() {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -10,6 +13,13 @@ function Header() {
   return (
     <header className="center-content">
       <nav>
+        <div className="icons-container">
+          <FaFacebookF className="icon" />
+          <FaInstagram className="icon" />
+        </div>
+        <div className="language-container">
+          <p>BG / EN</p>
+        </div>
         <div className='navigation-bar'>
           <Link to="/services">Services</Link>
           <Link to="/portfolio"

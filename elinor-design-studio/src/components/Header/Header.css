@@ -1,6 +1,7 @@
 .center-content {
   max-width: 1440px;
   margin: 0 auto;
+  position: relative; /* Added this to make the navbar container relative */
 }
 
 .navigation-bar {
@@ -51,4 +52,28 @@
 
 .dropdown-menu a:hover {
   background-color: #f7f7f7;
+}
+
+/* Added styles for positioning the icons and p tag */
+.icons-container, .language-container {
+    position: absolute;
+    top: 10px; /* Adjust as required */
+}
+
+.icons-container {
+    left: 10px; /* Adjust as required */
+}
+
+.language-container {
+    right: 10px; /* Adjust as required */
+}
+
+.icon {
+    font-size: 24px; /* adjust size as needed */
+    margin-right: 10px; /* space between icons */
+}
+
+.language-container p {
+    margin: 0; /* Removing the default margin */
+    cursor: pointer;
 }
